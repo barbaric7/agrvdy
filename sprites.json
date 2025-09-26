@@ -1,0 +1,38 @@
+{
+  "frames": {
+    "girl_idle_down_0": { "x": 40, "y": 102, "w": 19, "h": 30 },
+    "girl_idle_down_1": { "x": 721, "y": 110, "w": 19, "h": 29 },
+    "girl_walk_down_0": { "x": 275, "y": 110, "w": 18, "h": 29 },
+    "girl_walk_down_1": { "x": 502, "y": 110, "w": 18, "h": 29 },
+    "girl_run_down_0": { "x": 940, "y": 126, "w": 19, "h": 27 },
+    "girl_run_down_1": { "x": 1184, "y": 126, "w": 19, "h": 27 },
+    "girl_idle_side_0": { "x": 40, "y": 394, "w": 18, "h": 30 },
+    "girl_idle_side_1": { "x": 721, "y": 394, "w": 18, "h": 30 },
+    "girl_walk_side_0": { "x": 275, "y": 402, "w": 19, "h": 29 },
+    "girl_walk_side_1": { "x": 494, "y": 402, "w": 20, "h": 29 },
+    "girl_run_side_0": { "x": 940, "y": 418, "w": 21, "h": 27 },
+    "girl_run_side_1": { "x": 1184, "y": 418, "w": 21, "h": 27 },
+    "girl_idle_up_0": { "x": 32, "y": 694, "w": 19, "h": 30 },
+    "girl_idle_up_1": { "x": 713, "y": 702, "w": 19, "h": 29 },
+    "girl_walk_up_0": { "x": 267, "y": 702, "w": 18, "h": 29 },
+    "girl_walk_up_1": { "x": 486, "y": 702, "w": 18, "h": 29 },
+    "girl_run_up_0": { "x": 949, "y": 718, "w": 19, "h": 29 },
+    "girl_run_up_1": { "x": 1192, "y": 718, "w": 19, "h": 29 }
+  },
+  "animations": {
+    "girl_idle_down": ["girl_idle_down_0", "girl_idle_down_1"],
+    "girl_walk_down": ["girl_walk_down_0", "girl_walk_down_1"],
+    "girl_run_down": ["girl_run_down_0", "girl_run_down_1"],
+    "girl_idle_side": ["girl_idle_side_0", "girl_idle_side_1"],
+    "girl_walk_side": ["girl_walk_side_0", "girl_walk_side_1"],
+    "girl_run_side": ["girl_run_side_0", "girl_run_side_1"],
+    "girl_idle_up": ["girl_idle_up_0", "girl_idle_up_1"],
+    "girl_walk_up": ["girl_walk_up_0", "girl_walk_up_1"],
+    "girl_run_up": ["girl_run_up_0", "girl_run_up_1"]
+  },
+  "meta": {
+    "image": "walk,run.png",
+    "frameRate": 8,
+    "loop": true
+  }
+}

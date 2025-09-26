@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriVidya - Pixel Farming Game | Government of Karnataka</title>
+    <meta
+      name="description"
+      content="Play AgroVidya's pixel farming game and learn sustainable farming practices through gamified learning."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+     <nav class="navbar">
+        <div class="container nav-content">
+          <a href="index.html" class="logo">AgriVidya</a>
+          <div class="nav-links">
+            <a href="index.html">← Back to Home</a>
+            <button
+              class="fullscreen-btn"
+              onclick="toggleFullscreen()"
+              title="Toggle Fullscreen"
+            >
+              ⛶
+            </button>
+          </div>
+        </div>
+      </nav>
+    <div class="game-container">
+
+      <!-- Game Frame -->
+      <div class="game-frame">
+        <div
+          class="game-canvas"
+          id="gameCanvas"
+          style="width: 100%; height: 100%"
+        >
+          <script src="phaser.min.js"></script>
+          <script src="main.js" type="module"></script>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      document.addEventListener("fullscreenchange", function () {
+        const fullscreenBtn = document.querySelector(".fullscreen-btn");
+        if (document.fullscreenElement) {
+          fullscreenBtn.innerHTML = "⛶";
+          fullscreenBtn.title = "Exit Fullscreen";
+        } else {
+          fullscreenBtn.innerHTML = "⛶";
+          fullscreenBtn.title = "Toggle Fullscreen";
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && document.fullscreenElement) {
+          document.exitFullscreen();
+        }
+
+        if (e.key === "F11") {
+          e.preventDefault();
+          toggleFullscreen();
+        }
+      });
+    </script> -->
+    <script>
+  function toggleFullscreen() {
+    // Check if the page is currently in fullscreen mode
+    if (!document.fullscreenElement) {
+      // If not, request fullscreen on the main page element
+      document.documentElement.requestFullscreen().catch(err => {
+        alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+      });
+    } else {
+      // If it is in fullscreen, exit it
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  }
+
+  // This event listener watches for when the browser enters or exits native fullscreen
+  document.addEventListener('fullscreenchange', () => {
+    const fullscreenBtn = document.querySelector('.fullscreen-btn');
+    if (document.fullscreenElement) {
+      // When in fullscreen, show the "close" icon
+      fullscreenBtn.innerHTML = "✖";
+      fullscreenBtn.title = "Exit Fullscreen";
+    } else {
+      // When not in fullscreen, show the "expand" icon
+      fullscreenBtn.innerHTML = "⛶";
+      fullscreenBtn.title = "Enter Fullscreen";
+    }
+  });
+
+  // Optional: Allow exiting fullscreen with the Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+  });
+</script>
+  </body>
+</html>

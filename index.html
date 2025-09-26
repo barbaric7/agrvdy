@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriVidya – Pixel Farming Game | Government of Karnataka</title>
+  <meta name="description" content="Karnataka's interactive platform where farmers play, learn sustainable practices, and boost real-world yields through gamified pixel farming." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+      </div>
+      <a href="index.html" class="logo">AgriVidya</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="game.html">Play Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-text container">
+      <h1>Learn Farming, One Pixel at a Time</h1>
+      <p>Karnataka's interactive platform where farmers play, learn sustainable practices, and boost real-world yields through gamified pixel farming.</p>
+      <div class="hero-buttons">
+        <a href="game.html" class="btn-primary">🎮 Start Playing</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="govt-badge">
+        <span>🏛️ Government of Karnataka Initiative</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section container" id="about">
+    <h2 class="section-title">About AgriVidya</h2>
+    <div class="about-content">
+      <p class="about-description">AgriVidya is a revolutionary gamified learning platform designed to empower Karnataka's farming community with sustainable agricultural practices. Through engaging pixel art gameplay, farmers and agricultural students can learn, practice, and master modern farming techniques in a risk-free virtual environment.</p>
+      <!-- <div class="stats-grid">
+        <div class="stat-card">
+          <h3>10,000+</h3>
+          <p>Farmers Trained</p>
+        </div>
+        <div class="stat-card">
+          <h3>50+</h3>
+          <p>Farming Techniques</p>
+        </div>
+        <div class="stat-card">
+          <h3>25+</h3>
+          <p>Districts Covered</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="section features-section" id="features">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🎮</div>
+          <h3>1. Play & Explore</h3>
+          <p>Grow crops in a fun pixel farm environment. Manage resources, plant seeds, and watch your virtual farm flourish while learning real farming principles.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏫</div>
+          <h3>2. Learn & Discover</h3>
+          <p>Master soil health management, organic pest control, water conservation, crop rotation, and sustainable farming practices through interactive gameplay.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌾</div>
+          <h3>3. Apply & Succeed</h3>
+          <p>Take the knowledge from your virtual farm to real-world applications. Boost yield sustainably and increase farm profitability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Features   -->
+ <section class="section container">
+    <h2 class="section-title">Game Features</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h4>🌱 Crop Management</h4>
+        <p>Learn about different crop varieties, seasonal planting, and optimal growing conditions.</p>
+      </div>
+      <div class="feature-item">
+        <h4>💧 Irrigation Systems</h4>
+        <p>Master water management techniques including drip irrigation and rainwater harvesting.</p>
+      </div>
+      <div class="feature-item">
+        <h4>🐛 Pest Control</h4>
+        <p>Discover organic and integrated pest management strategies to protect your crops.</p>
+      </div>
+      <div class="feature-item">
+        <h4>🌡️ Weather Adaptation</h4>
+        <p>Learn to adapt farming practices based on weather patterns and climate conditions.</p>
+      </div>
+      <div class="feature-item">
+        <h4>💰 Market Economics</h4>
+        <p>Understand crop pricing, market demand, and maximize your farm's profitability.</p>
+      </div>
+      <div class="feature-item">
+        <h4>🏆 Achievement System</h4>
+        <p>Earn badges and rewards as you master different aspects of sustainable farming.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section demo-section" id="demo">
+    <div class="container">
+      <h2 class="section-title">Try the Demo</h2>
+      <div class="demo-content">
+        <div class="demo-placeholder">
+          <h3>🎮 Game Demo Coming Soon!</h3>
+          <p>Experience AgroVidya's pixel farming simulation. Learn sustainable practices while having fun!</p>
+          <button class="btn-primary demo-btn" onclick="showModal()">Launch Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="demoModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>🚀 Demo Launching Soon!</h2>
+      <p>The AgroVidya pixel farming demo is currently in development. Stay tuned for an immersive learning experience that will revolutionize agricultural education in Karnataka!</p>
+      <div class="modal-features">
+        <h4>What to expect:</h4>
+        <ul>
+          <li>Interactive pixel art farming simulation</li>
+          <li>Real-world sustainable farming techniques</li>
+          <li>Progressive learning modules</li>
+          <li>Achievement and reward system</li>
+          <li>Multi-language support (Kannada, English)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🌱 AgroVidya</h3>
+        <p>A Government of Karnataka initiative bringing gamified farming education to farmers and agricultural students across the state. Building a sustainable future through innovative learning.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#demo">Play Demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Government Partners</h4>
+        <ul>
+          <li>Department of Agriculture</li>
+          <li>Karnataka State Govt.</li>
+          <li>Agricultural Universities</li>
+          <li>Smart India Hackathon</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📧 agrovidya@karnataka.gov.in<br>📞 +91 80 XXXX XXXX<br>🏛️ Bengaluru, Karnataka</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 AgroVidya • Government of Karnataka • Built for Smart India Hackathon
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
